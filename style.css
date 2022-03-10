@@ -27,15 +27,14 @@ h2 {
   font-weight: 300;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  text-transform: capitalize;
 }
 .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
-  padding-top: 10vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding: 2rem;
 }
 .card {
   background-color: var(--other-color);
@@ -47,8 +46,8 @@ h2 {
   transition: all 0.5s;
 }
 .card img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: 200px;
   object-fit: cover;
   border-radius: 5px 5px 0 0;
   filter: saturate(0.5);
@@ -60,4 +59,6 @@ h2 {
 
 .card:hover img {
   filter: saturate(1);
+  box-shadow: 0 0 20px rgb(8, 1, 1);
 }
+/*card.sprites.other.dream_world.front_default*/
